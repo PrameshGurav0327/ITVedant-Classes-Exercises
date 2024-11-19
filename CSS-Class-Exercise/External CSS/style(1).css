@@ -1,0 +1,19 @@
+h1{
+    color:blueviolet;
+}
+
+p.x.y{
+    background-color: yellow;
+    font-size: 15px;
+}
+
+p.x .pq{
+    background-color:red;
+    font-size: 50px;
+    
+}
+
+.y{
+    background-color: skyblue;
+}
+
