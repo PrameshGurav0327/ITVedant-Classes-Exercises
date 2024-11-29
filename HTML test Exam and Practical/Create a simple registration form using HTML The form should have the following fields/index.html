@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1rem;
+        }
+
+        h1{
+            size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <form action="registration">
+        <table>
+            <h1>Registration</h1>
+            <tr>First Name: <input type="text" name="fname" id="name"></tr>
+            <br>
+            <br>
+            <tr>Last Name: <input type="text" name="lname" id="name"></tr>
+            <br>
+            <br>
+            <tr>Email: <input type="email" name="email" id="mail"></tr>
+            <br>
+            <br>
+            <tr>Password: <input type="password" name="password" id="password"></tr>
+            <br>
+            <br>
+            <tr>Gender: <input type="radio" name="gender" id="male">Male
+            <input type="radio" name="gender" id="female">Female</tr>
+            <br>
+            <br>
+            <tr>
+                Hobbies: <input type="checkbox" name="music" id="hobbies">Music
+            <input type="checkbox" name="sports" id="hobbies">Sports
+            <input type="checkbox" name="reading" id="hobbies">Reading
+            </tr>
+        </table>
+        <input type="button" value="submit">
+    </form>
+    
+</body>
+</html>
