@@ -1,102 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Portfolio</title>
-<style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f4;
-    }
-
-    .header {
-        background-color: #333;
-        color: white;
-        padding: 15px 20px;
-        text-align: center;
-    }
-
-    .container {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 20px;
-    }
-
-    .card {
-        background-color: white;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        margin: 10px;
-        padding: 20px;
-        flex: 1 1 calc(100% - 40px); /* Full width on small screens */
-        max-width: 300px;
-        transition: transform 0.3s;
-    }
-
-    .card:hover {
-        transform: scale(1.05);
-    }
-
-    @media (min-width: 600px) {
-        .card {
-            flex: 1 1 calc(50% - 40px); /* Two columns on medium screens */
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body{
+            margin: 0;
+            animation: cubic-bezier(0.075, 0.82, 0.165, 1);
+            animation: random bars 0.5s timing-function delay iteration-count direction fill-mode;
         }
-    }
-
-    @media (min-width: 900px) {
-        .card {
-            flex: 1 1 calc(33.33% - 40px); /* Three columns on large screens */
+        header{
+            padding: 10px 0;
+            background-color: black;
         }
-    }
 
-    .footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 10px 20px;
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-    }
-</style>
+        .logo{
+            display:inline-flex;
+            justify-content: space-around;
+            text-decoration: double;
+            text-size-adjust: 200px;
+            color:rgb(255, 0, 0);
+            height: 20px;
+            width: 200px;
+        }
+
+        header nav ul li{
+            display: inline-flex;
+            justify-content: center;
+            padding: 20px;
+            list-style:none;
+        }
+
+        nav ul{
+            display: flex;
+            justify-content: center;
+            padding-left: 15px;
+            font-size: larger;
+        }
+
+        #home img{
+            display: flex;
+            height:300px;
+            width: 250px;
+        }
+
+        #home h1{
+            display: inline-flex;
+            justify-content: right;
+        }
+
+        #about{
+            display:inline-flex;
+            justify-content: right;
+        }
+
+        #about p{
+            margin-left: 20px;;
+        }
+
+        #skills ul li{
+            display: inline-flex;
+            list-style: none;
+        }
+
+        #skills ul li img{
+            height: 100px;
+            width: 100px;
+        }
+
+        a:hover{
+            color: whitesmoke;
+            padding: 0;
+        }
+
+       @media (min-width: 600px){
+       }
+    </style>
 </head>
 <body>
-<div class="header">
-    <h1>My Portfolio</h1>
-</div>
-<div class="section">
-  <section>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#"></a></li>
-      </ul>
-    </nav>
-  </section>
-</div>
+    <header>
+        <a href="#" class="logo">Pramesh</a>
+        <div class="nav">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        <section id="home">
+            <div class="container-1">
+                <img src="profile.jpg" alt="My Picture">
+                <h1>Hi! I am Pramesh Gurav, I am a skilled Full Stack Developer</h1>
+            </div>
+        </section>
+            <!-- <section id="about">
+                <h2>About</h2>
+                <hr>
+                <p>Specializing in Python. With a strong foundation in front-end technologies, I craft seamless and dynamic web applications. My expertise includes frameworks such as Django and Flask, as well as proficiency in HTML, CSS, to create responsive and user-friendly interfaces. I am passionate about problem-solving and continuously learning to stay at the forefront of the ever-evolving tech landscape. Let's build something amazing together!</p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <hr>
+        <ul>
+            <li><a href="#"><img src="html.png" alt="HTML5"></a></li>
+            <li><a href="#"><img src="css.png" alt="CSS"></a></li>
+        </ul>
+        </section>
+        <section id="services">
+            <h2>Services</h2>
+            <hr>
 
-<div class="container">
-    <div class="card">
-        <h2>Project 1</h2>
-        <p>Description of project 1.</p>
-    </div>
-    <div class="card">
-        <h2>Project 2</h2>
-        <p>Description of project 2.</p>
-    </div>
-    <div class="card">
-        <h2>Project 3</h2>
-        <p>Description of project 3.</p>
-    </div>
-    <!-- Add more cards as needed -->
-</div>
+        </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <hr>
+            <div id="fluid-card">
 
-<div class="footer">
-    <p>&copy; 2024 My Portfolio</p>
-</div>
+            </div>
+        </section>
+        <section id="contact">
+            <h1>Contact</h1>
+            <hr>
+        </section> -->
+
 </body>
 </html>
