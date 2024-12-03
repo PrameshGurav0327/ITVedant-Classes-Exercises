@@ -89,28 +89,37 @@ input, textarea {
 
 /* Button Styling */
 .button{
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
     text-align: center;
 }
 
-.button #home{
+/* Button Styling*/
+
+.button button{
+    margin-top: 5px;
+    text-align: center;
+}
+
+.button #back-to-home-page{
     background-color: #ffdd57;
     color: #333;
     border: none;
-    padding: 10px 20px;
+    padding: 10px 10px;
     border-radius: 5px;
     font-size: 1rem;
     font-weight: bold;
 }
 
-.button #home:hover{
+.button #back-to-home-page:hover{
     background-color: #50c0ec;
     color: rgb(24, 243, 239);
 }
 
 footer {
     text-align: center;
-    padding: 0.5px;
+    padding: 0.1px;
     background-color: #333;
     color: white;
     position: relative;
