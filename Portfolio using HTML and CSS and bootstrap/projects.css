@@ -3,19 +3,7 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f4f4f9;
-    color:#333;
-    line-height: 1.6;
-}
-
-/* Navigation bar */
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: linear-gradient(to bottom,  #007bff, #6fbbd3);
+    background-color:;
     color:#333;
     line-height: 1.6;
 }
@@ -32,7 +20,7 @@ body{
     display: flex;
     justify-content: center;
     margin: 0; 
-    padding: 0;
+    padding: 15px;
 }
 
 .nav ul li{
@@ -48,7 +36,7 @@ body{
 
 .nav ul li a:hover{
     color: #ffdd57;
-    text-decoration: underline;
+    text-decoration:underline;
 }
 
 /* Section styling */
@@ -69,7 +57,7 @@ body{
  /* Project Cards */
 
 .card{
-    background:   linear-gradient to (left #007bff, #6fbbd3);
+    background:linear-gradient (to left #007bff, #ffffff);
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 20px auto;
@@ -77,11 +65,14 @@ body{
     padding: 20px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: lightskyblue;
+    text-decoration-color: #ffffff;
 }
 
 .card:hover{
+    background:hsl(203, 87%, 57%);
     transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0 ,0 , 0, 0.2))
+    box-shadow: 0 6px 12px rgba(0 ,0 , 0, 0.2)
 }
 
 .card h3{
@@ -91,6 +82,13 @@ body{
 
 .card p{
     color:#555;
+}
+
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #007bff, #6fbbd3);
+    color: white;
 }
 
 /* Button Styling */
@@ -118,7 +116,7 @@ body{
 
 @media (max-width: 768px){
     .nav ul{
-        flex-direction:row;
+        flex-direction: column;
     }
 
     .nav ul li{
@@ -132,5 +130,6 @@ body{
     #projects .card-body{
         width: 600px;
         height: 600px;
+        text-overflow: clip;
     }
 }
